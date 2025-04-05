@@ -4,7 +4,7 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 5.25.0"
     }
-
+    
     random = {
       source  = "hashicorp/random"
       version = "~> 3.5.1"
@@ -27,9 +27,9 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "gitopsterrastate"
+    bucket = "devopsterrafom"
     key    = "terraform.tfstate"
-    region = "us-east-2"
+    region = "us-east-1"
   }
 
   required_version = "~> 1.6.3"
